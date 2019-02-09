@@ -1,0 +1,42 @@
+{
+	"name": "@fallutils/backend",
+	"version": "0.0.1",
+	"description": "backend development library by fall",
+	"license": "MIT",
+	"homepage": "https://github.com/fallproject/backend-utils#readme",
+	"main": "dist/index.js",
+	"types": "./src/db/index.d.ts",
+	"directories": {
+		"doc": "docs"
+	},
+	"devDependencies": {
+		"@types/mongodb": "^3.1.19",
+		"@types/node": "^10.12.18",
+		"bili": "^4.2.5",
+		"rollup-plugin-node-resolve": "^4.0.0",
+		"vuepress": "^1.0.0-alpha.37"
+	},
+	"peerDependencies": {
+		"level": "^4.0.0",
+		"mongodb": "^3.1.12"
+	},
+	"scripts": {
+		"docs:start": "vuepress dev docs",
+		"docs:build": "vuepress build docs",
+		"bundle": "bili ."
+	},
+	"repository": {
+		"type": "github",
+		"url": "fallproject/backend-utils"
+	},
+	"author": {
+		"name": "SimplyCodin",
+		"email": "simply@fallproject.org"
+	},
+	"bugs": {
+		"url": "https://github.com/fallproject/backend-utils/issues"
+	},
+	"engines": {
+		"node": ">=10.0.0"
+	}
+}
