@@ -18,7 +18,6 @@ class Mongo {
 		timer.start()
 		this._createDB( hostname, port, suffix, auth)
 		timer.stop
-		log
 	}
 
 	_createDB( hostname: string, port: string, suffix: string, { username: usr, password: pwd }: Auth ) {
