@@ -4,26 +4,24 @@
 	"description": "backend development library by fall",
 	"license": "MIT",
 	"homepage": "https://github.com/fallproject/backend-utils#readme",
-	"main": "dist/index.js",
-	"types": "./src/db/index.d.ts",
 	"directories": {
 		"doc": "docs"
 	},
 	"devDependencies": {
+		"@pika/plugin-build-node": "^0.3.11",
+		"@pika/plugin-ts-standard-pkg": "^0.3.11",
 		"@types/mongodb": "^3.1.19",
 		"@types/node": "^10.12.18",
-		"bili": "^4.2.5",
-		"rollup-plugin-node-resolve": "^4.0.0",
+		"typescript": "^3.3.3333",
 		"vuepress": "^1.0.0-alpha.37"
 	},
 	"peerDependencies": {
-		"level": "^4.0.0",
 		"mongodb": "^3.1.12"
 	},
 	"scripts": {
 		"docs:start": "vuepress dev docs",
 		"docs:build": "vuepress build docs",
-		"bundle": "bili ."
+		"build": "npx @pika/pack build"
 	},
 	"repository": {
 		"type": "github",
@@ -38,5 +36,15 @@
 	},
 	"engines": {
 		"node": ">=10.0.0"
+	},
+	"@pika/pack": {
+		"pipeline": [
+			[
+				"@pika/plugin-ts-standard-pkg"
+			],
+			[
+				"@pika/plugin-build-node"
+			]
+		]
 	}
 }

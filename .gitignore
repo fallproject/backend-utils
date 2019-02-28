@@ -38,9 +38,12 @@ typings/
 .node_repl_history
 
 # environment variables file
+config.env.*
 .env
-.env.test
-.env.*
+env.*
+env.test.*
 
-# vuepress build output
+# distribution
 .vuepress/dist
+dist
+pkg

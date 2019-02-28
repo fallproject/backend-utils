@@ -8,4 +8,5 @@ module.exports = {
 		docsDir: "/docs",
 		nav,
 	},
+	evergreen: true,
 }

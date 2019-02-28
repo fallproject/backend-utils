@@ -21,7 +21,7 @@ export default {
 
 
 <style lang="stylus">
-@import "../palette.styl";
+@import "../palette.styl"
 .landingGrid
 	display: grid
 	grid-template-columns: repeat(auto-fit, 250px)
@@ -42,6 +42,6 @@ export default {
 	box-sizing: border-box
 	border-bottom: 1px solid darken($accentColor, 10%)
     text-align: center
-	&:hover
-		background-color: lighten($accentColor, 10%)
+.landingButton:hover
+	background-color: lighten($accentColor, 10%)
 </style>

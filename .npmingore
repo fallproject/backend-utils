@@ -1,1 +1,4 @@
 docs
+bili.config.ts
+.prettierrc
+node_modules
