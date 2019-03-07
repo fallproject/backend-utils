@@ -3,7 +3,8 @@ export interface Options {
 	hostname?: string,
 	port?: string,
 	auth?: Auth,
-	suffix?: string
+	suffix?: string,
+	logger?: Function 
 }
 export interface Auth {
 	username?: string,
